@@ -1,5 +1,21 @@
 .header{
     width: 100%;
-    height: 21.875rem;
+    height: 31.25rem;
     background-color: #000080;
+    &__data{
+        display: flex;
+        margin-top: 4rem;
+    }
+    &__title{
+        font-size: 4rem;
+        font-family: 'Nunito', sans-serif;
+        max-width: 40rem;
+        color: white;
+    }
+    &__description{
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        max-width: 30rem;
+        color: white;
+    }
 }

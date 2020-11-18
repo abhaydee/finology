@@ -2,11 +2,21 @@
     display: flex;
     justify-content: space-between;
     padding-top: 1.25rem;
+    &__list{
+        padding-inline-start: 0;
+    }
     &__listitem{
         font-family: 'Nunito', sans-serif;
         color: white;
         list-style: none;
         display: inline-flex;
         margin-right: 1.25rem;
+        &:hover{
+            cursor: pointer;
+            color: #00b2d2;
+        }
+    }
+    &__search{
+
     }
 }
