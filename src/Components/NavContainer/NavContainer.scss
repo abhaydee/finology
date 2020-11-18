@@ -1,7 +1,12 @@
 .nav-container{
     display: flex;
     justify-content: space-between;
-    &__img{
-        padding-top: 1.25rem;
+    padding-top: 1.25rem;
+    &__listitem{
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        list-style: none;
+        display: inline-flex;
+        margin-right: 1.25rem;
     }
 }
