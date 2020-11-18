@@ -1,10 +1,12 @@
 import React from 'react'
-
+import {Container} from "react-bootstrap"
+import NavContainer from '../NavContainer/NavContainer'
+import "./Header.scss"
 function Header() {
     return (
-        <div>
-            Hey, I am the header
-        </div>
+        <Container fluid className="header">
+            <NavContainer/>
+        </Container>
     )
 }
 
