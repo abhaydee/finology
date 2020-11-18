@@ -1,10 +1,12 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import Logo from "../../assets/images/logo.png"
-import Search from "../../assets/icons/search.svg"
-import "./NavContainer.scss"
-import {navList} from "../../utils/utils"
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import Logo from "../../assets/images/logo.png";
+import Search from "../../assets/icons/search.svg";
+import "./NavContainer.scss";
+import {navList,componentCheckSize} from "../../utils/utils";
 function NavContainer() {
+    const isMobile=componentCheckSize();
+    console.log("the mobile view",isMobile)
     return (
         <Container>
             <div className="nav-container">

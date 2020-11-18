@@ -18,4 +18,16 @@
         max-width: 30rem;
         color: white;
     }
+    &__image{
+        width: 50%;
+        height: 26.5rem;
+        margin-top: 1rem;
+    }
 }
+@media screen and (max-width:48rem){
+    .header{
+        &__image{
+            display: none;
+        }
+    }
+    }
