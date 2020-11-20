@@ -14,7 +14,10 @@
         max-width: 100%;
     }
 }
-
+.signin-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
 @media screen and (min-width:48rem){
     .dashboard-container{
         display: flex;
@@ -29,7 +32,7 @@
         }
         &__title{
             color: #000080;
-            max-width: 50%;
+            max-width: 70%;
             font-size: 1.625rem;
             font-family: $font-semibold;
         }
@@ -38,5 +41,9 @@
             color: #999999;
             max-width: 80%;
         }
+    }
+    .signin-container{
+        display: flex;
+        flex-direction: row;
     }
 }
