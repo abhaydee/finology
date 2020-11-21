@@ -24,6 +24,7 @@ function Contact() {
             <Form.Label>Message</Form.Label>
             <Form.Control as="textarea" aria-label="With textarea" />
           </Form.Group>
+          <input type="submit" name="Send" value="Send" className={styles["contact__button"]} />
         </Form>
       </div>
     </Container>
