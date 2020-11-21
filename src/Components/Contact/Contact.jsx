@@ -10,6 +10,7 @@ function Contact() {
             [e.target.name]:e.target.value
         })
     }
+    console.log("the input details",input)
   return (
     <Container className={styles["contact"]}>
       <Heading heading={"Contact Us"} />
