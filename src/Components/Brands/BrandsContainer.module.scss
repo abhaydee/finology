@@ -1,0 +1,9 @@
+.brands-container{
+    text-align: center;
+    &__image{
+        width: 4.375rem;
+        height: 4.375rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+}
