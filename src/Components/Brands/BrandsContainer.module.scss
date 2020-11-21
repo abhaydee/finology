@@ -1,9 +1,28 @@
 .brands-container{
     text-align: center;
     &__image{
-        width: 4.375rem;
-        height: 4.375rem;
+        width: 8.375rem;
+        height: 8.375rem;
         margin-right: 2rem;
         margin-top: 1rem;
+    }
+    &__imagecontainer{
+        display: flex;
+        justify-content: left;
+        overflow-x: scroll;
+    }
+
+}
+
+@media screen and (min-width:48rem){
+    .brands-container{
+        &__image{
+            width: 4.375rem;
+            height: 4.375rem;
+        }
+        &__imagecontainer{
+            display: flex;
+            justify-content: center;
+        }
     }
 }

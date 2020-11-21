@@ -7,7 +7,7 @@ function BrandsContainer() {
     return (
         <div className={styles["brands-container"]}>
             <Heading heading="We've worked with"/>
-            <Container>
+            <Container className={styles["brands-container__imagecontainer"]}>
                 {Partners.map((brand)=>(
                     <img key={brand.id} src={brand.imageurl}  className={styles["brands-container__image"]}  />
                 ))}
