@@ -1,10 +1,10 @@
 import React from 'react'
-
+import { Container } from 'react-bootstrap'
 function Footer() {
     return (
-        <div>
-            
-        </div>
+        <Container fluid>
+            Hey I am a footer
+        </Container>
     )
 }
 

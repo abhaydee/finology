@@ -23,6 +23,7 @@
         &__imagecontainer{
             display: flex;
             justify-content: center;
+            overflow-x: hidden;
         }
     }
 }
