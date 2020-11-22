@@ -17,7 +17,7 @@ function ServiceCard({}) {
                 </div>
                 <div>
                 <div className={styles["servicecard__description"]}>
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.""
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo."
                     </div>
                 </div>
             </Container>

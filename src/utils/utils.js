@@ -26,37 +26,37 @@ export const People = [
     description: "CEO",
   },
   {
-    id: "1",
+    id: "2",
     imageurl: require("../assets/people/david-campion.jpg").default,
     title: "David Campion",
     description: "UI/UX Designer",
   },
   {
-    id: "1",
+    id: "3",
     imageurl: require("../assets/people/gaetan-houssin.jpg").default,
     title: "Gaeton Houssin",
     description: "Full Stack Developer",
   },
   {
-    id: "1",
+    id: "4",
     imageurl: require("../assets/people/jerome-boudot.jpg").default,
     title: "Jerome Boudot",
     description: "Marketing",
   },
   {
-    id: "1",
+    id: "5",
     imageurl: require("../assets/people/jerome-mahuet.jpg").default,
     title: "Jerome mahuet",
     description: "Customer Support",
   },
   {
-    id: "1",
+    id: "6",
     imageurl: require("../assets/people/manuela-faveri.jpg").default,
     title: "Manuela Faveri",
     description: "Data Analyst",
   },
   {
-    id: "1",
+    id: "7",
     imageurl: require("../assets/people/nicolas-lebarreau.jpg").default,
     title: "Nicolas Lebarreau",
     description: "Data Scientist",
@@ -69,42 +69,49 @@ export const service = [
       imageurl: require("../assets/people/darlene-chabrat.jpg").default,
       title: "Frank Latrnam",
       profession: "CEO",
+      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
     },
     {
       id: "2",
       imageurl: require("../assets/people/david-campion.jpg").default,
-      profession: "David Campion",
-      description: "UI/UX Designer",
+      title: "David Campion",
+      profession: "UI/UX Designer",
+      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
     },
     {
       id: "3",
       imageurl: require("../assets/people/gaetan-houssin.jpg").default,
-      profession: "Gaeton Houssin",
-      description: "Full Stack Developer",
+      title: "Gaeton Houssin",
+      profession: "Full Stack Developer",
+      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
     },
     {
       id: "4",
       imageurl: require("../assets/people/jerome-boudot.jpg").default,
-      profession: "Jerome Boudot",
-      description: "Marketing",
+      title: "Jerome Boudot",
+      profession: "Marketing",
+      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
     },
     {
       id: "5",
       imageurl: require("../assets/people/jerome-mahuet.jpg").default,
-      profession: "Jerome mahuet",
-      description: "Customer Support",
+      title: "Jerome mahuet",
+      profession: "Customer Support",
+      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
     },
     {
       id: "6",
       imageurl: require("../assets/people/manuela-faveri.jpg").default,
-      profession: "Manuela Faveri",
-      description: "Data Analyst",
+      title: "Manuela Faveri",
+      profession: "Data Analyst",
+      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
     },
     {
       id: "7",
       imageurl: require("../assets/people/nicolas-lebarreau.jpg").default,
-      profession: "Nicolas Lebarreau",
-      description: "Data Scientist",
+      title: "Nicolas Lebarreau",
+      profession: "Data Scientist",
+      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
     },
   ];
   
