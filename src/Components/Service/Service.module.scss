@@ -1,0 +1,39 @@
+@import "../../utils/fonts.scss";
+.service {
+    display: flex;
+    flex-direction: column;
+    &__image {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    &__heading {
+      color: #000080;
+      font-size: 1.65rem;
+      font-family: $font-semibold;
+    }
+    &__heart {
+      justify-content: center;
+      width: 100%;
+    }
+}
+
+@media screen and (min-width:48rem){
+    .service {
+        margin-left: 8rem;
+        flex-direction: row;
+        &__image {
+          width: 1.875rem;
+          height: 1.875rem;
+          margin-right: 1rem;
+          margin-top: 1rem;
+        }
+        &__heading {
+          max-width: 35%;
+          text-align: left !important;
+        }
+        &__heart {
+          display: inline-flex;
+          justify-content: flex-start;
+        }
+    }
+}
