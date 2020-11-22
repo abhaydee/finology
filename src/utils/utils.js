@@ -18,12 +18,12 @@ export const Partners=[{id:"1",imageurl:require("../assets/images/apple.PNG").de
 ]
 
 export const People=[{id:"1",imageurl:require("../assets/people/darlene-chabrat.jpg").default,title:"Frank Latrnam",description:"CEO"},
-{id:"1",imageurl:require("../assets/people/darlene-chabrat.jpg").default,title:"Frank Latrnam",description:"CEO"},
-{id:"1",imageurl:require("../assets/people/darlene-chabrat.jpg").default,title:"Frank Latrnam",description:"CEO"},
-{id:"1",imageurl:require("../assets/people/darlene-chabrat.jpg").default,title:"Frank Latrnam",description:"CEO"},
-{id:"1",imageurl:require("../assets/people/darlene-chabrat.jpg").default,title:"Frank Latrnam",description:"CEO"},
-{id:"1",imageurl:require("../assets/people/darlene-chabrat.jpg").default,title:"Frank Latrnam",description:"CEO"},
-{id:"1",imageurl:require("../assets/people/darlene-chabrat.jpg").default,title:"Frank Latrnam",description:"CEO"}]
+{id:"1",imageurl:require("../assets/people/david-campion.jpg").default,title:"David Campion",description:"UI/UX Designer"},
+{id:"1",imageurl:require("../assets/people/gaetan-houssin.jpg").default,title:"Gaeton Houssin",description:"Full Stack Developer"},
+{id:"1",imageurl:require("../assets/people/jerome-boudot.jpg").default,title:"Jerome Boudot",description:"Marketing"},
+{id:"1",imageurl:require("../assets/people/jerome-mahuet.jpg").default,title:"Jerome mahuet",description:"Customer Support"},
+{id:"1",imageurl:require("../assets/people/manuela-faveri.jpg").default,title:"Manuela Faveri",description:"Data Analyst"},
+{id:"1",imageurl:require("../assets/people/nicolas-lebarreau.jpg").default,title:"Nicolas Lebarreau",description:"Data Scientist"}]
 
 export const componentCheckSize=()=>{
     let isMobile=false
@@ -33,25 +33,25 @@ export const componentCheckSize=()=>{
     return isMobile
 }
 
-export const componentReSize=()=>{
-    const [isMobile,setisMobile]=useState(false);
-    useEffect(()=>{
-        let checkSize=false;
-        if(!checkSize){
-            updateDimensions();
-            checkSize=true;
-        }   
-        window.addEventListener("resize",updateDimensions);
-        return()=>window.removeEventListener("resize",updateDimensions)
+// export const componentReSize=()=>{
+//     const [isMobile,setisMobile]=useState(false);
+//     useEffect(()=>{
+//         let checkSize=false;
+//         if(!checkSize){
+//             updateDimensions();
+//             checkSize=true;
+//         }   
+//         window.addEventListener("resize",updateDimensions);
+//         return()=>window.removeEventListener("resize",updateDimensions)
 
-    },[]);
-    const updateDimensions=()=>{
-        if(window.outerWidth<768){
-            setisMobile(true);
-        }
-        else{
-            setisMobile(false)
-        }
-        return isMobile
-    }
-}
+//     },[]);
+//     const updateDimensions=()=>{
+//         if(window.outerWidth<768){
+//             setisMobile(true);
+//         }
+//         else{
+//             setisMobile(false)
+//         }
+//         return isMobile
+//     }
+// }
