@@ -4,6 +4,7 @@ import Heart from "../../assets/icons/heart.svg"
 import {componentCheckSize} from "../../utils/utils";
 import Heading from "../Heading/Heading";
 import styles from "./Service.module.scss";
+import ServiceCard from "./ServiceCard";
 function Service() {
     const isMobile=componentCheckSize();
   return (
@@ -19,6 +20,7 @@ function Service() {
         />
       </div>
     </Container>
+    <ServiceCard/>
     </>
   );
 }
