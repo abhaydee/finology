@@ -14,9 +14,8 @@ function Contact() {
     console.log("the input details",input)
   return (
     <>
-     <Heading heading={"Contact Us"} />
+     <Heading heading={"Contact Us"} className={styles["contact-heading"]} />
     <Container className={styles["contact"]}>
-     
       <div className={styles["contact__form"]}>
         <Form className={styles["contact__container"]}>
           <Form.Group
