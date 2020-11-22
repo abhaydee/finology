@@ -42,6 +42,9 @@
   &__card {
     width: 100%;
     margin-bottom: 2rem;
+    border: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
     &:first-child {
       margin-top: 2rem;
     }
@@ -49,10 +52,12 @@
   &__image {
     width: 100%;
     height: auto;
-    // object-fit: contain;
   }
   &__title {
     text-align: center;
+  }
+  &__description{
+      text-align: center;
   }
 }
 
