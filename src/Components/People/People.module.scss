@@ -1,0 +1,36 @@
+@import "../../utils/fonts.scss";
+.people{
+    display: flex;
+    &__image{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    &__heading{
+        color: #000080;
+        font-size: 1.65rem;
+        font-family: $font-semibold;
+    }
+    &__happy{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:48rem){
+    .people{
+        margin-left: 8rem;
+        &__image{
+            width: 1.875rem;
+            height: 1.875rem;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+        &__heading{
+            max-width: 65%;
+            text-align: left !important;
+        }
+        &__happy{
+            display: inline-flex;
+            justify-content: flex-start;
+        }
+    }
+}

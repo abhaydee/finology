@@ -5,11 +5,13 @@ import DashboardContainer from './Components/Dashboard/DashboardContainer';
 import BrandsContainer from './Components/Brands/BrandsContainer';
 import Footer from './Components/Footer/Footer';
 import Contact from './Components/Contact/Contact';
+import People from './Components/People/People';
 function App() {
   return (
     <div className="App">
       <Header/>
       <DashboardContainer/>
+      <People/>
       <BrandsContainer/>
       <Contact/>
       <Footer/>
