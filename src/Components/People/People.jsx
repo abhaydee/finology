@@ -15,8 +15,11 @@ function People() {
                 <Heading heading={"Our important people are listed here"} className={styles["people__heading"]}/>
             </div>
             <div className={styles["people__controls"]}>
-                <button>Edit</button>
-                <button>Add</button>
+                <button className={styles["people__controls__edit"]}>Edit</button>
+                <button className={styles["people__controls__add"]}>Add</button>
+            </div>
+            <div className={styles["people__container"]}>
+                
             </div>
         </Container>
     )
