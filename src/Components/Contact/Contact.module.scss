@@ -1,4 +1,6 @@
 .contact{
+    display: flex;
+    flex-direction: column;
     margin-top: 4rem;
     &__form{
         width: 100%;
@@ -10,6 +12,7 @@
     }
     &__group{
         margin-bottom: 2rem;
+        color: #000080;
     }
     &__button{
         width: 100%;
@@ -19,5 +22,25 @@
         color: white;
         border-radius: 0.5rem;
 
+    }
+}
+.contact-maps{
+    width: 100%;
+    height: 50vh;
+    margin-top: 2rem;
+}
+@media screen and (min-width:48rem){
+    .contact{
+        display: flex;
+        flex-direction: row;
+        &__form{
+            width: 30.5rem;
+            height: auto;
+            margin-left: 4rem;
+        }
+    }
+    .contact-maps{
+        width: 30%;
+        height: 6.25rem;
     }
 }

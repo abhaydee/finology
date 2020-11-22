@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { Container, Form } from "react-bootstrap";
 import Heading from "../Heading/Heading";
 import styles from "./Contact.module.scss";
+import ContactMap from "./ContactMap";
 function Contact() {
     const [input,setInput]=useState({});
     const handleChange=(e)=>{
@@ -12,8 +13,10 @@ function Contact() {
     }
     console.log("the input details",input)
   return (
+    <>
+     <Heading heading={"Contact Us"} />
     <Container className={styles["contact"]}>
-      <Heading heading={"Contact Us"} />
+     
       <div className={styles["contact__form"]}>
         <Form className={styles["contact__container"]}>
           <Form.Group
@@ -60,7 +63,7 @@ function Contact() {
             className={styles["contact__group"]}
           >
             <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" aria-label="With textarea" onChange={handleChange} name="Message"/>
+            <Form.Control as="textarea" aria-label="With textarea" onChange={handleChange} name="Message" placeholder="Enter your message here"/>
             <Form.Control.Feedback
               type="invalid"
               className={styles["contact__error"]}
@@ -76,7 +79,11 @@ function Contact() {
           />
         </Form>
       </div>
+       <div>
+           <ContactMap/>
+        </div> 
     </Container>
+    </>
   );
 }
 
