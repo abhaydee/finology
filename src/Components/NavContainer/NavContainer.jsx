@@ -2,10 +2,10 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Logo from "../../assets/images/logo.png";
 import Search from "../../assets/icons/search.svg";
-import {navList,componentCheckSize} from "../../utils/utils";
+import {navList,ComponentReSize} from "../../utils/utils";
 import "./NavContainer.scss";
 function NavContainer() {
-    const isMobile=componentCheckSize();
+    const isMobile=ComponentReSize();
     console.log("the mobile view",isMobile)
     return (
         <Container>

@@ -2,11 +2,11 @@ import React from "react";
 import { Container,Card } from "react-bootstrap";
 import happyFace from "../../assets/icons/happy-face.svg";
 import Heading from "../Heading/Heading";
-import { componentCheckSize, People as people } from "../../utils/utils";
+import { ComponentReSize, People as people } from "../../utils/utils";
 import styles from "./People.module.scss";
 import Person from "./Person";
 function People() {
-  const isMobile = componentCheckSize();
+  const isMobile = ComponentReSize();
   return (
     <>
     <Container className={styles["people"]}>

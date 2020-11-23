@@ -115,33 +115,25 @@ export const service = [
     },
   ];
   
-export const componentCheckSize = () => {
-  let isMobile = false;
-  if (window.outerWidth < 768) {
-    isMobile = true;
-  }
-  return isMobile;
-};
+export const ComponentReSize=()=>{
+    const [isMobile,setisMobile]=useState(false);
+    useEffect(()=>{
+        let checkSize=false;
+        if(!checkSize){
+            updateDimensions();
+            checkSize=true;
+        }
+        window.addEventListener("resize",updateDimensions);
+        return()=>window.removeEventListener("resize",updateDimensions)
 
-// export const componentReSize=()=>{
-//     const [isMobile,setisMobile]=useState(false);
-//     useEffect(()=>{
-//         let checkSize=false;
-//         if(!checkSize){
-//             updateDimensions();
-//             checkSize=true;
-//         }
-//         window.addEventListener("resize",updateDimensions);
-//         return()=>window.removeEventListener("resize",updateDimensions)
-
-//     },[]);
-//     const updateDimensions=()=>{
-//         if(window.outerWidth<768){
-//             setisMobile(true);
-//         }
-//         else{
-//             setisMobile(false)
-//         }
-//         return isMobile
-//     }
-// }
+    },[]);
+    const updateDimensions=()=>{  
+        if(window.outerWidth<=576){
+            setisMobile(true);
+        }
+        else{
+            setisMobile(false)
+        }
+      }
+        return isMobile
+}
