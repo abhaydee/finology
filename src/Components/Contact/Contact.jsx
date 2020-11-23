@@ -10,7 +10,7 @@ function Contact() {
      <Heading heading={"Contact Us"} className={styles["contact-heading"]} />
     <Container className={styles["contact"]}>
       <div className={styles["contact__form"]}>
-        <ContactForm/>
+        <ContactForm buttonReq message={"message"} />
       </div>
        <div>
            <ContactMap/>

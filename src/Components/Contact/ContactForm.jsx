@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { Container, Form } from "react-bootstrap";
 import styles from "./Contact.module.scss";
-function ContactForm() {
+function ContactForm(props) {
     const [input,setInput]=useState({});
     const handleChange=(e)=>{
         setInput({
@@ -55,8 +55,8 @@ function ContactForm() {
           controlId="formBasicEmail"
           className={styles["contact__group"]}
         >
-          <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" aria-label="With textarea" onChange={handleChange} name="Message" placeholder="Enter your message here"/>
+          <Form.Label>{props.message}</Form.Label>
+          <Form.Control as="textarea" aria-label="With textarea" onChange={handleChange} name={props.message} placeholder="Enter your message here"/>
           <Form.Control.Feedback
             type="invalid"
             className={styles["contact__error"]}
@@ -64,12 +64,15 @@ function ContactForm() {
             Please Enter your Message
           </Form.Control.Feedback>
         </Form.Group>
-        <input
-          type="submit"
-          name="Send"
-          value="Send"
-          className={styles["contact__button"]}
-        />
+        {props.buttonReq &&
+            <input
+            type="submit"
+            name="Send"
+            value="Send"
+            className={styles["contact__button"]}
+          />
+        }
+        
       </Form>
     )
 }
