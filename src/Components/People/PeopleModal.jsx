@@ -4,11 +4,15 @@ import styles from "./PeopleModal.module.scss"
 function PeopleModal({toggleModal,handleClose}) {
     return (
         <Modal show={toggleModal}
-        onHide={handleClose}>
+        onHide={handleClose}
+        dialogClassName={styles["modal"]}
+        >
         <Modal.Header closeButton >
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Modal Heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+            
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
