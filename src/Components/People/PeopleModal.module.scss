@@ -1,5 +1,17 @@
 .modal{
-    width: 100%;
+    width: 20rem;
+    &__image{
+        margin-top: 1rem;
+        width: 3.125rem;
+        height: 3.125rem;
+        margin-left:40%;
+    }
+    &__cancel{
+
+    }
+    &__save{
+
+    }
 }
 
 @media screen and (max-width:36rem){
