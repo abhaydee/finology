@@ -7,15 +7,15 @@ import ContactMap from "./ContactMap";
 function Contact() {
   return (
     <>
-     <Heading heading={"Contact Us"} className={styles["contact-heading"]} />
-    <Container className={styles["contact"]}>
-      <div className={styles["contact__form"]}>
-        <ContactForm buttonReq message={"message"} subjectReq />
-      </div>
-       <div>
-           <ContactMap/>
-        </div> 
-    </Container>
+      <Heading heading={"Contact Us"} className={styles["contact-heading"]} />
+      <Container className={styles["contact"]}>
+        <div className={styles["contact__form"]}>
+          <ContactForm buttonReq message={"message"} subjectReq />
+        </div>
+        <div>
+          <ContactMap />
+        </div>
+      </Container>
     </>
   );
 }
