@@ -38,19 +38,20 @@ function ContactForm(props) {
             Please Enter your email
           </Form.Control.Feedback>
         </Form.Group>
+       {props.subjectReq &&
         <Form.Group
-          controlId="formBasicEmail"
-          className={styles["contact__group"]}
+        controlId="formBasicEmail"
+        className={styles["contact__group"]}
+      >
+        <Form.Label>Subject</Form.Label>
+        <Form.Control type="text" placeholder="Enter Subject"  onChange={handleChange} name="Contact Subject"/>
+        <Form.Control.Feedback
+          type="invalid"
+          className={styles["contact__error"]}
         >
-          <Form.Label>Subject</Form.Label>
-          <Form.Control type="text" placeholder="Enter Subject"  onChange={handleChange} name="Contact Subject"/>
-          <Form.Control.Feedback
-            type="invalid"
-            className={styles["contact__error"]}
-          >
-            Please Enter your Subject
-          </Form.Control.Feedback>
-        </Form.Group>
+          Please Enter your Subject
+        </Form.Control.Feedback>
+      </Form.Group>}
         <Form.Group
           controlId="formBasicEmail"
           className={styles["contact__group"]}

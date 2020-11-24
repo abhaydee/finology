@@ -16,9 +16,7 @@ function PeopleModal({ toggleModal, handleClose }) {
       </Modal.Header>
       <Modal.Body>
         <img src={User} className={styles["modal__image"]} />
-        <div className={styles1["contact"]}>
           <ContactForm message={"description"} labelReq={"position"}  />
-        </div>
       </Modal.Body>
       <Modal.Footer>
         <Button

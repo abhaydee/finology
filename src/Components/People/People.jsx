@@ -29,7 +29,7 @@ function People() {
       </div>
       <div className={styles["people__controls"]}>
         <button className={styles["people__controls__edit"]} onClick={handleClick}>Edit</button>
-        <button className={styles["people__controls__add"]}>Add</button>
+        <button className={styles["people__controls__add"]} onClick={handleClick}>Add</button>
       </div>
     </Container>
     <Person/>
