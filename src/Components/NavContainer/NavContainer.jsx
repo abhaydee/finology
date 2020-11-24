@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Container } from "react-bootstrap";
 import Logo from "../../assets/images/logo.png";
 import Search from "../../assets/icons/search.svg";
@@ -14,6 +14,7 @@ function NavContainer() {
     setToggleModal(true)
   }
   const handleClose=()=>{
+      console.log("hitting close")
     setToggleModal(false)
   }
   return (
@@ -29,7 +30,7 @@ function NavContainer() {
         </ul>
         {isMobile ? (
           <img
-            src={Cancel}
+            src={Search}
             className="nav-container__search"
             width={30}
             height={30}
@@ -44,7 +45,17 @@ function NavContainer() {
           />
         )}
         {toggleModal && (
-          <NavContainerModal toggleModal={toggleModal} handleClose={handleClose} />
+          <>
+
+         
+          <div id="mySidenav" className={`${"sidenav"} ${toggleModal?"sidenav-open":"sidenav-close"}`} >
+          <a href="javascript:void(0)" class="closebtn" onClick={handleClose}>&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+         </>  
         )}
       </div>
     </Container>
