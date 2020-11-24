@@ -9,7 +9,8 @@
   }
   &__imagecontainer {
     display: flex;
-    justify-content: left;
+    flex-wrap: wrap;
+    justify-content: center;
     overflow-x: scroll;
   }
 }
