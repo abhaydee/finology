@@ -1,55 +1,54 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    margin-top: 4rem;
-    &__form{
-        width: 100%;
-        height: 35rem;
-        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-    }
-    &__container{
-        padding: 1.25rem;
-    }
-    &__group{
-        margin-bottom: 2rem;
-        color: #000080;
-    }
-    &__button{
-        width: 100%;
-        padding: 0.5rem;
-        text-align: center;
-        background-color: #000080;
-        color: white;
-        border-radius: 0.5rem;
-
-    }
-}
-.contact-maps{
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  &__form {
     width: 100%;
-    height: 50vh;
-    margin-top: 2rem;
+    height: 35rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  &__container {
+    padding: 1.25rem;
+  }
+  &__group {
+    margin-bottom: 2rem;
+    color: #000080;
+  }
+  &__button {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #000080;
+    color: white;
+    border-radius: 0.5rem;
+  }
 }
-.contact-heading{
-    margin-top: 2rem;
+.contact-maps {
+  width: 100%;
+  height: 50vh;
+  margin-top: 2rem;
 }
-@media screen and (min-width:48rem){
-    .contact{
-        display: flex;
-        flex-direction: row;
-        &__form{
-            width: 30.5rem;
-            height: auto;
-            margin-left: 4rem;
-        }
-        &__button{
-            width: 6.25rem;
-            padding: 0.4rem;
-            float: right;
-            margin-bottom:1.25rem;
-        }
+.contact-heading {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 48rem) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    &__form {
+      width: 30.5rem;
+      height: auto;
+      margin-left: 4rem;
     }
-    .contact-maps{
-        width: 30%;
-        height: 6.25rem;
+    &__button {
+      width: 6.25rem;
+      padding: 0.4rem;
+      float: right;
+      margin-bottom: 1.25rem;
     }
+  }
+  .contact-maps {
+    width: 30%;
+    height: 6.25rem;
+  }
 }
