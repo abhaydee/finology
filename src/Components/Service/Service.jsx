@@ -24,7 +24,7 @@ function Service() {
       </Container>
       {!isMobile ? (
         <div>
-          <Carousel itemsToShow={isMobile ? 1 : 2.5} >
+          <Carousel itemsToShow={isMobile ? 1 : 2.5}>
             {service.map((serve) => (
               <div key={serve.id}>
                 <ServiceCard

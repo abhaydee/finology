@@ -64,76 +64,81 @@ export const People = [
 ];
 
 export const service = [
-    {
-      id: "1",
-      imageurl: require("../assets/people/darlene-chabrat.jpg").default,
-      title: "Frank Latrnam",
-      profession: "CEO",
-      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
-    },
-    {
-      id: "2",
-      imageurl: require("../assets/people/david-campion.jpg").default,
-      title: "David Campion",
-      profession: "UI/UX Designer",
-      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
-    },
-    {
-      id: "3",
-      imageurl: require("../assets/people/gaetan-houssin.jpg").default,
-      title: "Gaeton Houssin",
-      profession: "Full Stack Developer",
-      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
-    },
-    {
-      id: "4",
-      imageurl: require("../assets/people/jerome-boudot.jpg").default,
-      title: "Jerome Boudot",
-      profession: "Marketing",
-      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
-    },
-    {
-      id: "5",
-      imageurl: require("../assets/people/jerome-mahuet.jpg").default,
-      title: "Jerome mahuet",
-      profession: "Customer Support",
-      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
-    },
-    {
-      id: "6",
-      imageurl: require("../assets/people/manuela-faveri.jpg").default,
-      title: "Manuela Faveri",
-      profession: "Data Analyst",
-      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
-    },
-    {
-      id: "7",
-      imageurl: require("../assets/people/nicolas-lebarreau.jpg").default,
-      title: "Nicolas Lebarreau",
-      profession: "Data Scientist",
-      description:"\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.\""
-    },
-  ];
-  
-export const ComponentReSize=()=>{
-    const [isMobile,setisMobile]=useState(false);
-    useEffect(()=>{
-        let checkSize=false;
-        if(!checkSize){
-            updateDimensions();
-            checkSize=true;
-        }
-        window.addEventListener("resize",updateDimensions);
-        return()=>window.removeEventListener("resize",updateDimensions)
+  {
+    id: "1",
+    imageurl: require("../assets/people/darlene-chabrat.jpg").default,
+    title: "Frank Latrnam",
+    profession: "CEO",
+    description:
+      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo."',
+  },
+  {
+    id: "2",
+    imageurl: require("../assets/people/david-campion.jpg").default,
+    title: "David Campion",
+    profession: "UI/UX Designer",
+    description:
+      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo."',
+  },
+  {
+    id: "3",
+    imageurl: require("../assets/people/gaetan-houssin.jpg").default,
+    title: "Gaeton Houssin",
+    profession: "Full Stack Developer",
+    description:
+      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo."',
+  },
+  {
+    id: "4",
+    imageurl: require("../assets/people/jerome-boudot.jpg").default,
+    title: "Jerome Boudot",
+    profession: "Marketing",
+    description:
+      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo."',
+  },
+  {
+    id: "5",
+    imageurl: require("../assets/people/jerome-mahuet.jpg").default,
+    title: "Jerome mahuet",
+    profession: "Customer Support",
+    description:
+      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo."',
+  },
+  {
+    id: "6",
+    imageurl: require("../assets/people/manuela-faveri.jpg").default,
+    title: "Manuela Faveri",
+    profession: "Data Analyst",
+    description:
+      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo."',
+  },
+  {
+    id: "7",
+    imageurl: require("../assets/people/nicolas-lebarreau.jpg").default,
+    title: "Nicolas Lebarreau",
+    profession: "Data Scientist",
+    description:
+      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo."',
+  },
+];
 
-    },[]);
-    const updateDimensions=()=>{  
-        if(window.outerWidth<=576){
-            setisMobile(true);
-        }
-        else{
-            setisMobile(false)
-        }
-      }
-        return isMobile
-}
+export const ComponentReSize = () => {
+  const [isMobile, setisMobile] = useState(false);
+  useEffect(() => {
+    let checkSize = false;
+    if (!checkSize) {
+      updateDimensions();
+      checkSize = true;
+    }
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+  const updateDimensions = () => {
+    if (window.outerWidth <= 576) {
+      setisMobile(true);
+    } else {
+      setisMobile(false);
+    }
+  };
+  return isMobile;
+};
