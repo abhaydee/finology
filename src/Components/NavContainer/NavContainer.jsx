@@ -35,7 +35,12 @@ function NavContainer() {
             height={30}
           />
         ) : (
-            <span style={{fontSize:"xx-large",cursor:"pointer",color:"white"}} onClick={handleClick}>&#9776;</span>
+          <span
+            style={{ fontSize: "xx-large", cursor: "pointer", color: "white" }}
+            onClick={handleClick}
+          >
+            &#9776;
+          </span>
         )}
         {toggleModal && (
           <>
