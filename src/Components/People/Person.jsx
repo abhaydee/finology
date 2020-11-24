@@ -6,7 +6,7 @@ function Person() {
   return (
     <Container className={styles["person"]}>
         {people.map((person) => (
-          <Card className={styles["person__card"]}>
+          <Card className={styles["person__card"]} key={person.id}>
             <Card.Img
               variant="top"
               src={person.imageurl}

@@ -9,7 +9,6 @@ function ContactForm(props) {
             [e.target.name]:e.target.value
         })
     }
-    console.log("the input details",input)
     return (
         <Form className={styles["contact__container"]}>
         <Form.Group

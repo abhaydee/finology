@@ -16,8 +16,6 @@
             color: #00b2d2;
         }
     }
-    &__search{
-    }
 }
 
 
@@ -32,11 +30,12 @@
     background-color: #000080;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 20px;
+    padding-left: 20px;
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 20px 8px 8px 10px;
     text-decoration: none;
     font-size: 25px;
     color: white;
@@ -68,3 +67,4 @@
   .sidenav-close{
       width: 0;
   }
+

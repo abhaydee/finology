@@ -23,22 +23,24 @@ function Service() {
         </div>
       </Container>
       {!isMobile ? (
-        <Carousel itemsToShow={isMobile ? 1 : 2.5}>
-          {service.map((serve) => (
-            <div id={serve.id}>
-              <ServiceCard
-                imageurl={serve.imageurl}
-                title={serve.title}
-                profession={serve.profession}
-                description={serve.description}
-              />
-            </div>
-          ))}
-        </Carousel>
+        <div>
+          <Carousel itemsToShow={isMobile ? 1 : 2.5} >
+            {service.map((serve) => (
+              <div key={serve.id}>
+                <ServiceCard
+                  imageurl={serve.imageurl}
+                  title={serve.title}
+                  profession={serve.profession}
+                  description={serve.description}
+                />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       ) : (
         <div className={styles["service__mobilecontainer"]}>
           {service.map((serve) => (
-            <div id={serve.id}>
+            <div key={serve.id}>
               <ServiceCard
                 imageurl={serve.imageurl}
                 title={serve.title}
