@@ -20,7 +20,7 @@ function People() {
       <Container className={styles["people"]}>
         <div className={styles["people__happy"]}>
           {!isMobile && (
-            <img src={happyFace} className={styles["people__image"]} />
+            <img src={happyFace} className={styles["people__image"]} alt="people_image" />
           )}
           <Heading
             heading={"Our important people are listed here"}

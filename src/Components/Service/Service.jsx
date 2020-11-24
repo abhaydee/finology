@@ -14,7 +14,7 @@ function Service() {
       <Container className={styles["service"]}>
         <div className={styles["service__heart"]}>
           {!isMobile && (
-            <img src={Heart} className={styles["service__image"]} />
+            <img src={Heart} className={styles["service__image"]} alt="service_image" />
           )}
           <Heading
             heading={"What other people say about our service"}

@@ -7,7 +7,7 @@ function Footer() {
   return (
     <Container fluid className={styles["footer"]}>
       <div className={styles["footer__logo-container"]}>
-        <img src={Logo} width={50} height={50} className="nav-container__img" />
+        <img src={Logo} width={50} height={50} className="nav-container__img" alt="nav__image" />
         <Heading
           heading={"Easy Work"}
           className={styles["footer__heading-style"]}

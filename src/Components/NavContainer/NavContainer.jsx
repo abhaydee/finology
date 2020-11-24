@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Logo from "../../assets/images/logo.png";
 import Search from "../../assets/icons/search.svg";
-import Menu from "../../assets/icons/menu-icon.png";
 import { navList, ComponentReSize } from "../../utils/utils";
 import "./NavContainer.scss";
 function NavContainer() {
@@ -33,6 +32,7 @@ function NavContainer() {
             className="nav-container__search"
             width={30}
             height={30}
+            alt="search"
           />
         ) : (
           <span
