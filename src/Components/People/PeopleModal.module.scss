@@ -1,30 +1,28 @@
-.modal{
-    width: 20rem;
-    &__image{
-        margin-top: 1rem;
-        width: 3.125rem;
-        height: 3.125rem;
-        margin-left:40%;
-    }
-    &__cancel{
-
-    }
-    &__save{
-
-    }
+.modal {
+  width: 20rem;
+  &__image {
+    margin-top: 1rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-left: 40%;
+  }
+  &__cancel {
+  }
+  &__save {
+  }
 }
 
-@media screen and (max-width:36rem){
-    .modal {
-        width: 100% ;
-        position: absolute ;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: 0 ;
-        border-radius: 1rem;
-    }
-    .modal-content{
-        border-radius: 1rem !important;
-    }
+@media screen and (max-width: 36rem) {
+  .modal {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    border-radius: 1rem;
+  }
+  .modal-content {
+    border-radius: 1rem !important;
+  }
 }
