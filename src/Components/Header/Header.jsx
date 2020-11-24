@@ -16,7 +16,7 @@ function Header() {
             We at EasyWork has the solution{" "}
           </p>
         </div>
-        <img src={Banner} className={"header__image"} />
+        <img src={Banner} className={"header__image"} alt="header" />
       </Container>
     </Container>
   );

@@ -17,7 +17,7 @@ function NavContainer() {
   return (
     <Container>
       <div className="nav-container">
-        <img src={Logo} width={50} height={50} className="nav-container__img" />
+        <img src={Logo} width={50} height={50} className="nav-container__img" alt="nav-image" />
         {!isMobile && (
           <ul className="nav-container__list">
             {navList.map((data) => (
@@ -55,10 +55,10 @@ function NavContainer() {
                 width={50}
                 height={50}
                 className="nav-container__img mb-2"
+                alt="nav"
               />
 
               <a
-                href="javascript:void(0)"
                 class="closebtn"
                 onClick={handleClose}
               >

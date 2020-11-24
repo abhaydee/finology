@@ -1,7 +1,5 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { service } from "../../utils/utils";
-import Avatar from "../../assets/people/darlene-chabrat.jpg";
 import styles from "./ServiceCard.module.scss";
 import Heading from "../Heading/Heading";
 function ServiceCard({ imageurl, title, description, profession }) {
@@ -9,7 +7,7 @@ function ServiceCard({ imageurl, title, description, profession }) {
     <div className={styles["servicecard"]}>
       <Container>
         <div className={styles["servicecard__container"]}>
-          <img src={imageurl} className={styles["servicecard__image"]} />
+          <img src={imageurl} className={styles["servicecard__image"]} alt="service-card" />
           <div className={styles["servicecard__content"]}>
             <Heading heading={title} className={styles["servicecard__title"]} />
             <Heading

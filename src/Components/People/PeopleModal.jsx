@@ -2,7 +2,6 @@ import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import User from "../../assets/icons/user.svg";
 import styles from "./PeopleModal.module.scss";
-import styles1 from "../Contact/Contact.module.scss";
 import ContactForm from "../Contact/ContactForm";
 function PeopleModal({ toggleModal, handleClose }) {
   return (
@@ -15,7 +14,7 @@ function PeopleModal({ toggleModal, handleClose }) {
         <Modal.Title>Modal Heading</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={User} className={styles["modal__image"]} />
+        <img src={User} className={styles["modal__image"]}  alt="modal"/>
         <ContactForm message={"description"} labelReq={"position"} />
       </Modal.Body>
       <Modal.Footer>

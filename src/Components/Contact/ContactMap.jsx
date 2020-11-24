@@ -1,7 +1,6 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 import { ComponentReSize } from "../../utils/utils";
-import styles from "./Contact.module.scss";
 function ContactMap() {
   const isMobile = ComponentReSize();
   const center = {

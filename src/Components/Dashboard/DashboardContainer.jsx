@@ -7,7 +7,7 @@ function DashboardContainer() {
   return (
     <Container>
       <div className="dashboard-container">
-        <img src={Dashboard} className="dashboard-container__image" />
+        <img src={Dashboard} className="dashboard-container__image" alt="container"/>
         <div className="dashboard-container__content">
           <h3 className="dashboard-container__title">
             We can give you our best user experience to your system
@@ -36,7 +36,7 @@ function DashboardContainer() {
             tur, adipisicing elit. Fugit, moles
           </p>
         </div>
-        <img src={Signin} className="dashboard-container__image" />
+        <img src={Signin} className="dashboard-container__image"  alt="dashboard"/>
       </div>
     </Container>
   );

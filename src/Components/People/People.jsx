@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Container, Card } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import happyFace from "../../assets/icons/happy-face.svg";
 import Heading from "../Heading/Heading";
-import { ComponentReSize, People as people } from "../../utils/utils";
+import { ComponentReSize } from "../../utils/utils";
 import styles from "./People.module.scss";
 import Person from "./Person";
 import PeopleModal from "./PeopleModal";

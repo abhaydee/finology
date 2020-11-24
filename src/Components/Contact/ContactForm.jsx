@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import styles from "./Contact.module.scss";
 function ContactForm(props) {
   const [input, setInput] = useState({});

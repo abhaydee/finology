@@ -13,6 +13,7 @@ function BrandsContainer() {
             key={brand.id}
             src={brand.imageurl}
             className={styles["brands-container__image"]}
+            alt="brand"
           />
         ))}
       </Container>
